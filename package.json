@@ -2,8 +2,9 @@
   "name": "docker-node-dockerfile-templates",
   "version": "0.1.0",
   "description": "Dockerfile templates for various node images",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
+    "start": "ts-node index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
