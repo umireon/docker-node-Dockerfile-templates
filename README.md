@@ -1,2 +1,2 @@
-# docker-node-Dockerfile-templates
+# docker-node-dockerfile-templates
 Dockerfile templates for various node images
