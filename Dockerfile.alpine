@@ -1,9 +1,0 @@
-FROM node:alpine
-RUN apk --no-cache add tini
-ENTRYPOINT ["/sbin/tini", "--"]
-USER node
-WORKDIR /home/node
-COPY --chown=node:node package.json package-lock.json ./
-RUN npm install --production && npm cache clean --force
-COPY --chown=node:node index.ts ./
-CMD ["node_modules/.bin/ts-node", "index.ts"]

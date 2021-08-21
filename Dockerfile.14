@@ -1,4 +1,4 @@
-FROM node:bullseye-slim
+FROM node:14-bullseye-slim
 WORKDIR /root
 COPY package.json package-lock.json tsconfig.json ./
 COPY src src
